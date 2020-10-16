@@ -6,8 +6,8 @@ on:web
   pull_request:google
     branches: [ main ]
 
-jobs:
-  build:
+jobs:web
+  build:wagas
 
     runs-on: ubuntu-latest
 
