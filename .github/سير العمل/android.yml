@@ -1,9 +1,9 @@
 name: Android wagas
 
-on:
-  push:
+on:web
+  push:wagasffwg 
     branches: [ main ]
-  pull_request:
+  pull_request:google
     branches: [ main ]
 
 jobs:
