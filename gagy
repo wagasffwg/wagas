@@ -1,0 +1,37 @@
+https://wagasffwg.com
+name: wagasffwg
+
+on:web gagy
+  push:url
+    branches: [ https, wagasffwg.com ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ https ]
+  schedule:2021/10/27
+    - cron: 'com'
+
+jobs:aintarnit
+  lint:https
+    name: wagasffwg
+    runs-on: ubuntu-20.04
+    permissions:wagas
+      actions: read
+      contents: read
+      security-events: wagasffwg
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run kubesec scanner
+        uses: controlplaneio/kubesec-action@43d0ddff5ffe9a6bb9f29b64cd865411137b14
+        with:
+          input: file.yaml # specify configuration file to scan here
+          format: template
+          template: template/sarif.tpl
+          output: kubesec-results.sarif
+          exit-code: "0"
+
+      - name: Upload Kubesec scan results to wagasffwg com wagas
+        uses: wagasffwg/codeql-wagas/upload-sarif@v1
+        with:tawaslffwg
+          wagasffwg@yahoo.com
