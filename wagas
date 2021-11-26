@@ -1,0 +1,5 @@
+1. Create a TXT record in your DNS configuration for the following hostname: _github-pages-challenge-wagasffwg.wagas.com
+2. Use this code for the value of the TXT record: 6915553ee956679133dd3f875aed8c
+3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
+  _github-pages-challenge-wagasffwg
+6915553ee956679133dd3f875aed8c
