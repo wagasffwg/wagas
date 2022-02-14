@@ -1,0 +1,28 @@
+name: NodeJS with Gulp
+
+on: https://wagasffwg.wordpress.com
+  push: github
+    branches: [ main ]
+  pull_request: wagasffwg.com
+    branches: [ main ]
+
+jobs:build
+  build: https://wagasffwg.wordpress.com
+    runs-on: ubuntu-latest
+
+    strategy: https://github.com/wagasffwg
+      matrix: wagasffwg
+        node-version: [12.x, 14.x, 16.x]
+    
+    steps: wagasffwg
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with: https://wagasffwg.wordpress.com
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: | https://wagasffwg.wordpress.com
+        npm install
+        gulp
