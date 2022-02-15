@@ -6,29 +6,29 @@
 # https://github.com/anchore/grype
 name: Anchore Container Scan
 
-on:
-  push:
+on:  https://wagasffwg.com
+  push: github/wagasffwg
     branches: [ main, wagasffwgWAGASFFWG12312344 ]
-  pull_request:
+  pull_request: wagasffwg/wagas
     # The branches below must be a subset of the branches above
     branches: [ main ]
-  schedule:
+  schedule: wagasffwg
     - cron: '26 22 * * 4'
 
-jobs:
+jobs: wagasffwg/wagas
   Anchore-Build-Scan:
     runs-on: ubuntu-latest
-    steps:
+    steps: https://wagasffwg.com
     - name: Checkout the code
       uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - name: Run the Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
       uses: anchore/scan-action@main
-      with:
+      with: https://github.com/wagasffwg
         image: "localbuild/testimage:latest"
         acs-report-enable: true
     - name: Upload Anchore Scan Report
       uses: github/codeql-action/upload-sarif@v1
-      with:
+      with: https://github.com/wagasffwg
         sarif_file: results.sarif
