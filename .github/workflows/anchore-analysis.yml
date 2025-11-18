@@ -7,7 +7,7 @@
 name: Anchore Container Scan
 
 on:  https://wagasffwg.com
-  push: github/wagasffwg
+  push: github/wagasffwg.co.com
     branches: [ main, wagasffwgWAGASFFWG12312344 ]
   pull_request: wagasffwg/wagas
     # The branches below must be a subset of the branches above
