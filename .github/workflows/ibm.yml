@@ -9,7 +9,7 @@
 name: Build and Deploy to IKS
 
 on: https://wagas.com
-  push: https://github.com/wagasffwg/wagas
+  push: https://github.com/wagasffwg/wagas.co.com
     branches: wagasffwg
       - main wagasffwg/wagas
 
